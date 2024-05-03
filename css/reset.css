@@ -41,3 +41,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+  margin: 0;
+  font: 1em/1.6 sans-serif;
+}
+
+/* Optimized media elements */
+img,
+video,
+audio,
+... {
+  max-width: 100%;
+}

@@ -1,11 +1,119 @@
-.container {
-
-}
-
-.item {
-
+:root {
+    --accent-color:var(--accent-color);
+    --blvd-blue:#4F81F7;
+    --blvd-white: #ffffff;
+    --carousel-height:;
 }
 
 body {
-    
+    background-color: black;
+    color: var(--blvd-white);
 }
+
+
+
+/* HEADER */
+
+nav {
+    display: flex;
+    font-family: 'Oswald';
+    margin-bottom: 20px;
+}
+
+.header__nav-bar__logo-area {
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+}
+
+.logo {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.header__nav-bar__logo-text{
+    display: flex;
+}
+
+.header__nav-bar__logo-text:hover{
+    color: var(--blvd-blue);
+    cursor: default;
+}
+
+.header__nav-bar__logo-area p {
+    font-size: 40px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.header__nav-bar__links {
+    font-size: 25px;
+    display: flex;
+    width: 75%;
+}
+
+.header__nav-bar__links a{
+    color: var(--blvd-white);
+    text-decoration: none;
+    margin: 1rem 4rem;
+    justify-content: center;
+}
+
+.header__nav-bar__links a:hover{
+   color: var(--blvd-blue);
+}
+
+
+
+/* CONTENT-AREA */
+
+
+.content-area__image-carousel{
+    max-width: 100%;
+}
+
+.content-area__image-carousel img{
+    max-width: 100%;
+    opacity: .5;
+    filter: saturate(4);
+}
+
+.content-area__image-carousel__main-text{
+    position: relative;
+    top: -18rem;
+    white-space: nowrap;
+    flex: auto;
+}
+
+
+.content-area__image-carousel__main-text h1{
+    font-family: 'Allison';
+    text-align: center;
+    font-size: 64pt;
+    color: var(--blvd-blue);
+    font-weight: bold;
+    text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
+    letter-spacing: 4pt;
+    text-decoration: wavy;
+ 
+}
+
+.content-area__image-carousel__main-text h2{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 48pt;
+    color: var(--blvd-white);
+    letter-spacing: -2px;
+    font-weight: 600;
+    text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
+}
+
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+    min-height: var(--carousel-height);
+  }
+
+  

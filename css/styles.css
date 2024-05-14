@@ -70,9 +70,23 @@ nav {
 /* CONTENT-AREA */
 
 
-.content-area__image-carousel{
-    max-width: 100%;
+.content-area__image-carousel__slider-wrapper {
+    max-width: 1920px;
+    width: 95%;
+    height: 900px;
 }
+
+.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list .content-area__image-carousel__image-item {
+    width: 1fr;
+    height: 900px;
+    object-fit: cover;
+} 
 
 .content-area__image-carousel img{
     max-width: 100%;
@@ -91,13 +105,12 @@ nav {
 .content-area__image-carousel__main-text h1{
     font-family: 'Allison';
     text-align: center;
-    font-size: 64pt;
+    font-size: 72pt;
     color: var(--blvd-blue);
     font-weight: bold;
     text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
     letter-spacing: 4pt;
     text-decoration: wavy;
- 
 }
 
 .content-area__image-carousel__main-text h2{
@@ -109,11 +122,3 @@ nav {
     font-weight: 600;
     text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
 }
-
-.carousel-inner {
-    overflow: hidden;
-    position: relative;
-    min-height: var(--carousel-height);
-  }
-
-  

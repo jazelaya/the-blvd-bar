@@ -58,7 +58,6 @@ body {
 /* Optimized media elements */
 img,
 video,
-audio,
-... {
+audio {
   max-width: 100%;
 }

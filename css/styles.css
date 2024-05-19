@@ -2,7 +2,6 @@
     --accent-color:var(--accent-color);
     --blvd-blue:#4F81F7;
     --blvd-white: #ffffff;
-    --carousel-height:;
 }
 
 body {
@@ -69,32 +68,58 @@ nav {
 
 /* CONTENT-AREA */
 
-
-.content-area__image-carousel__slider-wrapper {
+.content-area__image-carousel {
     max-width: 1920px;
-    width: 95%;
-    height: 900px;
+    width: 100%;
+    
+}
+.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 35px;
+    font-size: 0;
+    scrollbar-width: none;
 }
 
-.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list ::-webkit-scrollbar {
+    display: none;
 }
 
 .content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list .content-area__image-carousel__image-item {
-    width: 1fr;
-    height: 900px;
+    /* width: 95%; */
+    height: 600px;
     object-fit: cover;
-} 
-
-.content-area__image-carousel img{
-    max-width: 100%;
-    opacity: .5;
-    filter: saturate(4);
 }
 
-.content-area__image-carousel__main-text{
+.content-area__image-carousel .content-area__image-carousel__slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    background-color: #4F81F7;
+    display: flex;
+    align-items: center;
+}
+
+.content-area__image-carousel__scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background-color:#ffffff;
+    position: relative;
+    border-radius: 4px;
+
+}
+
+.content-area__image-carousel__scrollbar-thumb .content-area__image-carousel__slider-scrollbar {
+    height: 20px;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+/* .content-area__image-carousel__main-text{
     position: relative;
     top: -18rem;
     white-space: nowrap;
@@ -108,7 +133,7 @@ nav {
     font-size: 72pt;
     color: var(--blvd-blue);
     font-weight: bold;
-    text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
+    text-shadow: -1px 2px 9px rgba(0,0,0, 1);
     letter-spacing: 4pt;
     text-decoration: wavy;
 }
@@ -120,5 +145,5 @@ nav {
     color: var(--blvd-white);
     letter-spacing: -2px;
     font-weight: 600;
-    text-shadow: -1px 2px 9px rgba(0,0,0,0.57);
-}
+    text-shadow: -1px 2px 9px rgba(0,0,0, 1);
+} */

@@ -119,6 +119,87 @@ nav {
     cursor: grab;
 }
 
+.carousel {
+    position: relative;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    background-color: red;
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+    color: var(--blvd-white);
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel-button i {
+    font-size: 25px;
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    padding: 10px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background-color: rgba(255, 255, 255, 1);
+    width: 15px;
+    height: 15px;
+}
+
+
 /* .content-area__image-carousel__main-text{
     position: relative;
     top: -18rem;

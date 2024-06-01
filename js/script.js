@@ -3,9 +3,7 @@ const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const navDots = document.querySelector('.carousel__nav');
-const dots = Array.from(navDots.children);
-const currentDot = navDots.querySelector('.current-slide');
-const currentSlide = track.querySelector('.current-slide');
+const dots = Array.from(navDots.children)
 
 const slideWidth= slides[0].getBoundingClientRect().width;
 

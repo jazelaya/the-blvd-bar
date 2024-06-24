@@ -1,11 +1,15 @@
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
+const currentSlide = track.querySelector('.current-slide');
+const slideWidth= slides[0].getBoundingClientRect().width;
+
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
-const navDots = document.querySelector('.carousel__nav');
-const dots = Array.from(navDots.children)
 
-const slideWidth= slides[0].getBoundingClientRect().width;
+const navDots = document.querySelector('.carousel__nav');
+const dots = Array.from(navDots.children);
+const currentDot = navDots.querySelector('.current-slide');
+
 
 
 //slide arrangement logic
@@ -18,11 +22,11 @@ slides.forEach(setSlidePosition);
 
 
 //Mechanics
-const moveToSlide = (track, currentSlide, targetSlide) => {
+ const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
-}
+ };
 
 
 function updateDots(currentDot, targetDot) {
@@ -36,16 +40,18 @@ prevButton.addEventListener('click', e => {
     const prevDot = currentDot.previousElementSibling;
     const targetDot = e.target.closest('button');
     
-
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, targetDot);
 });
+
+
 
 //move right
 nextButton.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
     const nextSlide = currentSlide.nextElementSibling;
     const nextDot = currentDot.nextElementSibling;
+
     //move to the next slide
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, targetDot);

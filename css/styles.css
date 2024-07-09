@@ -423,6 +423,7 @@ nav {
     font-size: 32px;
     color: black;
     font-weight: 600;
+    text-align: left;
 }
 
 .price {

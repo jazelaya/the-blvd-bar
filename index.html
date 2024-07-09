@@ -29,28 +29,131 @@
             </div>
        </nav>
        <section class="content-area__image-carousel" aria-label="Main Photos">
-        <div class="content-area__image-carousel__slider-wrapper">
-            <div class="content-area__image-carousel__image-list">
-                <img src="/assets/gold.webp" class="content-area__image-carousel__image-item" alt="michelada">
-                <img src="/assets/beer1.webp" class="content-area__image-carousel__image-item" alt="beers">
-                <img src="/assets/beer2.webp" class="content-area__image-carousel__image-item" alt="beers">
-                <img src="/assets/beer3.webp" class="content-area__image-carousel__image-item" alt="beers">
-                <img src="/assets/IPA.webp" class="content-area__image-carousel__image-item" alt="beers">
-                <img src="/assets/sweets.webp" class="content-area__image-carousel__image-item" alt="beers">
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left"><i class="fa-solid fa-caret-left"></i></button>
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="/assets/gold.webp" alt="michelada">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="/assets/beer1.webp" alt="beer">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="/assets/beer2.webp" alt="beer">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="/assets/beer3.webp" alt="beer">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="/assets/IPA.webp" alt="IPA">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="/assets/sweets.webp" alt="soda">
+                            </li>
+                        </ul>
+                    </div>
+                <button class="carousel__button carousel__button--right"><i class="fa-solid fa-caret-right"></i></button>
+                <div class="content-area__image-carousel__main-text">
+                    <h1>The Blvd Boyle Heights</h1>
+                    <h2>NEIGHBORHOOD BAR</h2>     
+                </div>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
             </div>
-        </div>
-        <!-- <div class="content-area__image-carousel__main-text">
-            <h1>The Blvd Boyle Heights</h1>
-            <h2>NEIGHBORHOOD BAR</h2>     
-        </div> -->
-        <div class="content-area__image-carousel__slider-scrollbar">
-            <div class="content-area__image-carousel__scrollbar-track">
-                <div class="content-area__image-carousel__scrollbar-thumb"></div>
+        </section>
+       <section class="content-area__beer-types" aria-label="Beer Types">
+            <div class="content-area__beer-types__header">
+                <h1>Come and taste</h1>
+                <h2>Our Finest Selection of Drinks</h2>
             </div>
-        </div>
-
+            <div class="content-area__beer-types__sections">
+                <div class="content-area__beer-types__column-desc-left">
+                    <div class="content-area__beer-types__item">
+                        <div>
+                            <h3>Porter</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-beer-mug-empty"></i>
+                    </div>
+                    <div class="content-area__beer-types__item">
+                        <div>
+                            <h3>Vienna Lager</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-martini-glass"></i>
+                    </div>
+                    <div class="content-area__beer-types__item">
+                        <div>
+                            <h3>Hefeweizen</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                </div>
+                <div class="content-area__beer-types__column-img">
+                    <img src="/assets/h6-img-1.png" alt="beer">
+                </div>
+                <div class="content-area__beer-types__column-desc-right">
+                    <div class="content-area__beer-types__item">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <div>
+                            <h3>Dry Stout</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-area__beer-types__item">
+                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                        <div>
+                            <h3>Milk Stout</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-area__beer-types__item">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <div>
+                            <h3>Brown Ale</h3>
+                            <p> Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, 
+                                nihil expetendis in mei. Meianpericula euri
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
        </section>
-    <!-- <script src="/js/script.js"></script> -->
-    <script src="https://kit.fontawesome.com/f2de3281f1.js" crossorigin="anonymous"></script>
+       <section class="content-area__gallery" aria-label="Image Gallery">
+            <div class="content-area__gallery__img-container">
+                <img src="/assets/beach-ball.webp" alt="large-crowd" class="content-area__gallery-big">
+                <img src="/assets/juan.webp" alt="DJ Smiling" class="content-area__gallery-tall">
+                <div class="content-area__gallery-right">
+                    <img src="/assets/sky-line.webp" alt="" class="content-area__gallery__square1">
+                    <img src="/assets/party.webp" alt="small-crowd" class="content-area__gallery__square2">
+                </div>
+            </div>
+       </section>
+       <section class="content-area__menu" aria-label="Menu">
+            <div class="content-area__menu__header">
+                <h1>The Finest Selection</h1>
+                <h2>Craft Beer Menu</h2>
+            </div>
+       </section>
+        <script src="/js/script.js"></script>   
+        <script src="https://kit.fontawesome.com/f2de3281f1.js" crossorigin="anonymous"></script>
     </body>  
 </html>

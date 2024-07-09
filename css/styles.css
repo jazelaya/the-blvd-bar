@@ -1,7 +1,8 @@
 :root {
-    --accent-color:var(--accent-color);
+    --accent-color: var(--accent-color);
     --blvd-blue:#4F81F7;
     --blvd-white: #ffffff;
+    --blvd-black: #000000;
 }
 
 body {
@@ -17,11 +18,13 @@ nav {
     display: flex;
     font-family: 'Oswald';
     margin-bottom: 20px;
+    width: 100%;
+    
 }
 
 .header__nav-bar__logo-area {
     display: flex;
-    width: 50%;
+    width: 25%;
     align-items: center;
 
 }
@@ -50,7 +53,8 @@ nav {
 .header__nav-bar__links {
     font-size: 25px;
     display: flex;
-    width: 75%;
+    width: 90%;
+    
 }
 
 .header__nav-bar__links a{
@@ -68,42 +72,14 @@ nav {
 
 
 
-
-
 /* CONTENT-AREA */
 
+/* IMAGE_CAROUSEL */
 .content-area__image-carousel {
-    max-width: 1920px;
+    max-width: 1600px;
     width: 100%;
+    display: block;
     
-}
-.content-area__image-carousel__slider-wrapper .content-area__image-carousel__image-list {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow-x: auto;
-    margin-bottom: 35px;
-    font-size: 0;
-    scrollbar-width: none;
-}
-
-
-.content-area__image-carousel__scrollbar-track{
-    height: 2px;
-    width: 100%;
-    background-color:#ffffff;
-    position: relative;
-    border-radius: 4px;
-
-}
-
-.content-area__image-carousel__scrollbar-thumb .content-area__image-carousel__slider-scrollbar {
-    height: 20px;
-    width: 50%;
-    background-color: black;
-    position: absolute;
-    border-radius: inherit;
-    cursor: grab;
 }
 
 .carousel {
@@ -121,14 +97,14 @@ nav {
     padding: 15px;
 }
 
-.carousel__image:hover {
+/* .carousel__image:hover {
     height: 102%;
     width: 102%;
-}
+} */
 
 .carousel__track-container {
     height: 100%;
-    position: relative;
+    overflow-x: auto;
 }
 
 .carousel__track {
@@ -147,7 +123,7 @@ nav {
     width: 100%;
 }
 
-.carousel-button {
+.carousel__button {
     color: var(--blvd-white);
     background: none;
     border: 0;
@@ -157,8 +133,8 @@ nav {
     cursor: pointer;
 }
 
-.carousel-button i {
-    font-size: 25px;
+.carousel__button i {
+    font-size: 62px;
 }
 
 .carousel__button--left {
@@ -197,8 +173,9 @@ nav {
 }
 
 .content-area__image-carousel__main-text{
-    position: relative;
-    top: -18rem;
+    position: absolute;
+    top: 40%;
+    left: 17%;
     white-space: nowrap;
     flex: auto;
 }
@@ -207,10 +184,10 @@ nav {
 .content-area__image-carousel__main-text h1{
     font-family: 'Allison';
     text-align: center;
-    font-size: 72pt;
+    font-size: 90pt;
     color: var(--blvd-blue);
     font-weight: bold;
-    text-shadow: -1px 2px 9px rgba(0,0,0, 1);
+    text-shadow: 4px 4px 8px rgba(0,0,0,1);
     letter-spacing: 4pt;
     text-decoration: wavy;
 }
@@ -222,5 +199,241 @@ nav {
     color: var(--blvd-white);
     letter-spacing: -2px;
     font-weight: 600;
-    text-shadow: -1px 2px 9px rgba(0,0,0, 1);
+    text-shadow: -1px 2px 9px rgba(0,0,0, 2);
+    margin-top: 0;
+    position: relative;
+    top: -4rem;
 } 
+
+
+
+
+
+/* BEER TYPES */
+
+.content-area__beer-types {
+    background-color: var(--blvd-white);
+}
+
+.content-area__beer-types__sections{
+    display: flex;
+    align-items: center;
+}
+
+.content-area__beer-types h1{
+    font-family: 'Allison';
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    font-size: 48pt;
+    color: var(--blvd-blue);
+    font-weight: bold;
+    
+}
+
+.content-area__beer-types h2{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 48pt;
+    color: black;
+    letter-spacing: -2px;
+    font-weight: 600;
+} 
+
+.content-area__beer-types h3{
+    font-family: 'Oswald';
+    font-size: 28pt;
+    color: var(--blvd-blue);
+    font-weight: 500;
+} 
+
+.content-area__beer-types p{
+    font-family: 'Oswald';
+    font-size: 16pt;
+    color: var(--blvd-black);
+} 
+
+.content-area__beer-types i{
+    color: var(--blvd-black);
+    font-size: 32pt;
+    margin: 2rem;
+}
+
+.content-area__beer-types__column-desc-left {
+    text-align: right;
+    padding: 5rem;
+    width: 1fr;
+}
+
+.content-area__beer-types__column-desc-right {
+    text-align: left;
+    padding: 5rem;
+    width: 1fr;
+}
+
+.content-area__beer-types__item{
+    display: flex;
+    align-items: center;
+}
+
+.content-area__beer-types__column-desc-left h3{
+    font-family: 'Oswald';
+    text-align: right;
+    font-size: 28pt;
+    color: var(--blvd-blue);
+} 
+
+.content-area__beer-types__column-desc-left p{
+    font-family: 'Oswald';
+    text-align: right;
+    font-size: 16pt;
+    color: var(--blvd-black);
+
+} 
+
+
+.content-area__beer-types__column-img{
+    width: 300px;
+    margin: 2rem;
+    display: flex;
+    object-fit: cover;
+    height: 400px;
+}
+
+
+
+
+
+/* IMAGE-GALLERY */
+
+.content-area__gallery{
+    display: flex;
+    background-color: var(--blvd-white);
+}
+
+.content-area__gallery__img-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    align-items: center;
+    justify-content: center;
+}
+
+.content-area__gallery-big{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 592px;
+    padding: 1rem;
+    display: flex;
+}
+
+.content-area__gallery-tall{
+    object-fit: cover;
+    padding: 1rem;
+    height: 592px;
+    display: flex;
+    width: 100%;
+}
+
+.content-area__gallery-right{
+    object-fit: cover;
+    object-position: center;
+    padding: 1rem;
+    width: 100%;
+    height: 592px;
+}
+
+.content-area__gallery__square1{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 10px;
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-area__gallery__square2{
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+/* MENU */
+.content-area__menu{
+    background-color: var(--blvd-white);
+}
+
+.content-area__menu__header{
+    background-color: var(--blvd-white);
+    padding-top: 1rem;
+
+}
+
+.content-area__menu__header h1{
+    font-family: 'Allison';
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    font-size: 48pt;
+    color: var(--blvd-blue);
+    font-weight: bold;
+    
+}
+
+.content-area__menu__header h2{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 48pt;
+    color: black;
+    letter-spacing: -2px;
+    font-weight: 600;
+} 
+
+.content-area__menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-area__menu-container__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-area__menu-container__item img{
+    width: 50px;
+    height: 40px;
+    margin: 2rem;
+}
+
+.content-area__menu-text-top {
+    display: flex;
+    margin: 0;
+}
+
+.beer-name{
+    font-family: 'Oswald';
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+}
+
+.price {
+    font-family: 'Oswald';
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.content-area__menu-container__item h4{
+    font-size: 12pt;
+    color: var(--blvd-blue);
+    display: block;
+}

@@ -1,3 +1,13 @@
+/* Notes: 
+-change the background color of the whole body section 
+so that it doesn't brick  
+-
+
+*/
+
+
+
+
 :root {
     --accent-color: var(--accent-color);
     --blvd-blue:#4F81F7;
@@ -437,4 +447,35 @@ nav {
     font-size: 12pt;
     color: var(--blvd-blue);
     display: block;
+}
+
+
+
+
+
+/* UPCOMING SHOWS */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--blvd-white);
+    margin: 3rem 3rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-area__upcoming-shows{
+    background-color: var(--blvd-white);
+}
+
+.content-area__upcoming-shows__tile h4{
+    font-family: 'Oswald';
+    color: white;
+    position: relative;
+    top: -50%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: xx-large;
 }

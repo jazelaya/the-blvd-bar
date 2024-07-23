@@ -378,6 +378,7 @@ nav {
 /* MENU */
 .content-area__menu{
     background-color: var(--blvd-white);
+    padding-bottom: 3rem;
 }
 
 .content-area__menu__header{
@@ -458,15 +459,16 @@ nav {
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 15px;
     background-color: var(--blvd-white);
-    margin: 3rem 3rem;
     align-content: center;
     justify-content: center;
 }
 
 .content-area__upcoming-shows{
     background-color: var(--blvd-white);
+    padding: 5rem;
+
 }
 
 
@@ -476,19 +478,19 @@ nav {
     object-position: center;
     object-fit: cover;    
     filter: grayscale(.9);
+    background-color: var(--blvd-white);
 }
 
 .content-area__upcoming-shows__tile h4{
     font-family: 'Oswald';
     color: white;
     position: relative;
-    top: -50%;
+    top: -25%;
     text-align: center;
     justify-content: center;
     font-weight: 800;
     font-size: xx-large;
     text-shadow: 3px 1px 4px rgba(0,0,0,0.64);
-
 }
 
 .content-area__upcoming-shows__tile h4:hover{
@@ -497,4 +499,76 @@ nav {
 
 .content-area__upcoming-shows__tile img:hover{
     filter: none;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+/* REVIEWS */
+
+.content-area__reviews{
+    margin-top: 0;
+}
+.content-area__reviews__icon{
+    color: var(--blvd-blue);
+    font-size: 36pt;
+    background-color: var(--blvd-white);
+    text-align: center;
+
+}
+.content-area__reviews__review{
+    text-align: center;
+    background-color: var(--blvd-white);
+    color: var(--blvd-black);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    margin: 0;
+}
+.content-area__reviews__review p{
+    font-size: 18pt;
+    opacity: .6;
+    font-style: italic;
+}
+.content-area__reviews__review h4{
+    font-size: 16pt;
+    font-weight: bolder;
+    margin: 2rem;
+}
+.content-area__reviews__selector{
+    background-color: var(--blvd-white);
+    color: var(--blvd-blue);
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 3rem;
+    font-size: 10pt;
+    margin: 0px;
+}
+
+
+
+
+
+/* LOGOS */
+.content-area__logos{
+    display: flex;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.content-area__logos__logo{
+    width: 200px;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--blvd-black);
 }

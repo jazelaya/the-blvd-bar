@@ -219,6 +219,8 @@ nav {
 
 
 
+
+
 /* BEER TYPES */
 
 .content-area__beer-types {
@@ -467,7 +469,7 @@ nav {
 
 .content-area__upcoming-shows{
     background-color: var(--blvd-white);
-    padding: 5rem;
+    padding: 5rem 5rem 3rem;
 
 }
 
@@ -495,6 +497,7 @@ nav {
 
 .content-area__upcoming-shows__tile h4:hover{
     color: var(--blvd-blue);
+    cursor: pointer;
 }
 
 .content-area__upcoming-shows__tile img:hover{
@@ -542,9 +545,9 @@ nav {
     color: var(--blvd-blue);
     text-align: center;
     letter-spacing: 10px;
-    padding: 3rem;
+    padding: 3rem 3rem 5rem;
     font-size: 10pt;
-    margin: 0px;
+    
 }
 
 
@@ -572,3 +575,25 @@ nav {
 footer {
     background-color: var(--blvd-black);
 }
+
+.content-area__footer__cursive {
+    font-family: 'Allison';
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    font-size: 48pt;
+    color: var(--blvd-blue);
+    font-weight: bold;
+}
+.content-area__footer__title{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 48pt;
+    color: var(--blvd-white);
+    letter-spacing: -2px;
+    font-weight: 600;
+    text-shadow: -1px 2px 9px rgba(0,0,0, 2);
+    margin-top: 0;
+    position: relative;
+}
+
